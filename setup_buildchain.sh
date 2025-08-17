@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# SPDX-License-Identifier: GPL-2.0
+#
+# Kernel build script for Samsung Tab S10 FE
+
 KERNEL_AOSP="kernel-aosp"
 KERNELBUILD="kernelbuild"
 

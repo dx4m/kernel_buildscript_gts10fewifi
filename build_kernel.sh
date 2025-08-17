@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# SPDX-License-Identifier: GPL-2.0
+#
+# Kernel build script for Samsung Tab S10 FE
+
 CURRENT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 KERNELBUILD="${CURRENT_DIR}/kernelbuild"
 
