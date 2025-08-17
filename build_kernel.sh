@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# SPDX-License-Identifier: GPL-2.0
+# SPDX-License-Identifier: GPL-3.0
 #
 # Kernel build script for Samsung Tab S10 FE
 
