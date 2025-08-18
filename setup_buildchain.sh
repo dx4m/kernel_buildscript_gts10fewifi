@@ -33,6 +33,14 @@ function getSamsungKernel() {
 	echo "[✅] Done."
 }
 
+function getKernelSUModule() {
+	echo "[💠] Getting KernelSU"
+	cd $KERNEL_DIR
+	curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+	cd $CURRENT_DIR
+	echo "[✅] Done."
+}
+
 function movePrebuilts() {
 	echo "[💠] Moving buildchain from AOSP to ${KERNELBUILD} folder"
 	mv $KERNEL_AOSP/tools $TOOLS
@@ -59,6 +67,7 @@ function removeAOSPKernel() {
 
 if [ ! -d $KERNELBUILD ]; then
 	getSamsungKernel
+	getKernelSUModule
 	copyDefconfig
 fi
 
