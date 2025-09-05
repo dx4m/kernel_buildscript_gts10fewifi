@@ -28,7 +28,7 @@ function getAOSPKernel() {
 function getSamsungKernel() {
 	echo "[💠] Getting Samsung kernel from github"
 	mkdir $KERNELBUILD && cd $KERNELBUILD
-	git clone https://github.com/dx4m/android_kernel_gts10fewifi -b android-15-6.6 common
+	git clone https://github.com/dx4m/android_kernel_gts10fewifi -b android15-6.6 common
 	cd ..
 	echo "[✅] Done."
 }
@@ -58,9 +58,9 @@ function copyDefconfig() {
 
 function removeAOSPKernel() {
 	echo "[💠] Remove AOSP"
-	
+
 	rm -rf $KERNEL_AOSP
-	
+
 	echo "[✅] Done."
 }
 
@@ -75,7 +75,7 @@ if [ ! -d $PREBUILTS ]; then
 	if [ ! -d $KERNEL_AOSP ]; then
 		getAOSPKernel
 	fi
-	
+
 	movePrebuilts
 	removeAOSPKernel
 fi

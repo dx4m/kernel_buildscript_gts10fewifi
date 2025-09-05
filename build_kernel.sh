@@ -21,7 +21,7 @@ MENUCONFIG=false
 PRINTHELP=false
 CLEAN=false
 
-VERSION="android15-8-abX520XXU1AYC5"
+VERSION="android15-8-abX520XXS4AYG5"
 
 if [ ! -d $PREBUILTS ]; then
 	echo "[❌] Missing prebuilts"
